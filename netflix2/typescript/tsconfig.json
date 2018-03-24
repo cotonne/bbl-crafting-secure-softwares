@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "./",
+    "sourceMap": false,
+    "strict": true
+  },
+  "include": [
+    "**.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "firefunctions"
+  ]
+}
