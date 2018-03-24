@@ -5,6 +5,11 @@
 Êtes-vous prêt à devenir le nouveau NetFlix? Oui?
 Alors, préparez-vous, la route est semée d'embûches.
 
+## Contraintes
+
+Seul le fichier contenant le point d'entrée de l'application
+(nommé Main) peut être modifié.
+
 ## L'application
 
 L'application est une application en mode console.
