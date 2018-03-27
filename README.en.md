@@ -1,4 +1,4 @@
-# NetFlix2
+# NetFlipster
 
 ## Your goal
 
