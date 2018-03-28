@@ -25,7 +25,7 @@ A vous de jouer! En tant que PO, voici les use cases demandés:
 
 **En tant que** utilisateur  
 **Je veux** m'enregistrer  
-**Afin de** accéder à NetFlix2  
+**Afin de** accéder à Neflipster  
 
 Exemple de sortie console de votre application
 ```
@@ -61,7 +61,7 @@ You are connected as tom
 Exemple de sortie console de votre application
 ```
 Films:
-H1)	Harry Potter and the Philosopher's Stone 
+1)	Harry Potter and the Philosopher's Stone 
 ...
 ```
 
@@ -74,10 +74,10 @@ H1)	Harry Potter and the Philosopher's Stone
 Exemple de sortie console de votre application
 ```
 Selection: 
-H1
+1
 Quantity:
 1
-Your command of 1 DVD ( Harry Potter and the Philosopher's Stone ) will be sent soon
+Votre commande de 1 VHS ( Harry Potter and the Philosopher's Stone ) sera bientôt livré
 ```
 
 ### Réduction sur le prix d'un film

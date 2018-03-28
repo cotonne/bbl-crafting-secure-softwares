@@ -2,7 +2,7 @@
 
 ## Your goal
 
-Are you ready to be the new **Netlfix**? Yes?
+Are you ready to be the new **Netflipster**? Yes?
 Si, let's go! But, brace yourself, hackers are comming!
 
 ## Constraints
@@ -25,7 +25,7 @@ Time to go! As your PO, here are a set of use cases that should be implemented:
 
 **As** customer  
 **I want** register
-**In order to** have access to Netflux2
+**In order to** have access to Netflipster
 
 Example of output from command line of your application:
 ```
