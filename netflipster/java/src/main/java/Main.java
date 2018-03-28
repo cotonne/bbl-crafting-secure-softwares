@@ -1,4 +1,5 @@
 import repository.UserDao;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Scanner;
 
@@ -43,14 +44,15 @@ public class Main {
     }
 
     private static void register(String userId, String password) {
-
+        // Check UserDao
+        throw new NotImplementedException();
     }
 
     private static boolean login(String userId, String password) {
-        return true;
+        throw new NotImplementedException();
     }
 
     private static void booking(String dvdId, int quantity, String userId) {
-
+        throw new NotImplementedException();
     }
 }
