@@ -52,7 +52,7 @@ public class Main {
         throw new NotImplementedException();
     }
 
-    private static void booking(String dvdId, int quantity, String userId) {
+    private static void booking(String userId, int quantity, String dvdId) {
         throw new NotImplementedException();
     }
 }

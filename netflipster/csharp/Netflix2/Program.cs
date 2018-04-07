@@ -60,7 +60,7 @@ namespace Netflix2
             return true;
         }
 
-        private static void Booking(string dvdId, int quantity, string userId)
+        private static void Booking(string userId, int quantity, string dvdId)
         {
         }
     }
