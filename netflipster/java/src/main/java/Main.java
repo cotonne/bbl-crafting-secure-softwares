@@ -1,5 +1,4 @@
 import repository.UserDao;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Scanner;
 
@@ -10,20 +9,21 @@ public class Main {
 
         System.out.println("Registration ---- ");
         System.out.println("Identifier:");
-        String userId = s.next();
+        String username = s.next();
         System.out.println("Password:");
         String password = s.next();
 
-        register(userId, password);
+        register(username, password);
 
         System.out.println("Connection : ");
         System.out.println("Identifier:");
-        userId = s.next();
+        username = s.next();
         System.out.println("Password:");
         password = s.next();
 
-        if (login(userId, password)) {
-            System.out.println("Vous êtes connecté en tant que " + userId);
+        String userId = login(username, password);
+        if (userId != "") {
+            System.out.println("Vous êtes connecté en tant que " + username);
             System.out.println("Films:");
 
             // List DVD HERE
@@ -37,22 +37,22 @@ public class Main {
 
             booking(dvdId, quantity, userId);
 
-            System.out.println("Nombre de DVD : " + quantity + " , prix final: 8€ x " + quantity + " DVD = " + quantity * 8 +
-                    ", Si vous en prenez un de plus : 7€ x " + (quantity + 1) + " DVD = " + (quantity + 1) * 7 + " €");
+            System.out.println("Number of DVD : " + quantity + " , final price: 8€ x " + quantity + " DVD = " + quantity * 8 +
+                    ", If you buy one more : 7€ x " + (quantity + 1) + " DVD = " + (quantity + 1) * 7 + " €");
         }
 
     }
 
-    private static void register(String userId, String password) {
+    private static void register(String name, String password) {
         // Check UserDao
-        throw new NotImplementedException();
+        UserDao.register(name, password);
     }
 
-    private static boolean login(String userId, String password) {
-        throw new NotImplementedException();
+    private static String login(String userId, String password) {
+        throw new UnsupportedOperationException();
     }
 
     private static void booking(String userId, int quantity, String dvdId) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 }

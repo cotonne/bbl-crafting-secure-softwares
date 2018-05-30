@@ -8,5 +8,6 @@ public class BookingDaoTest {
     public void should_book_a_dvd() {
         UserDao.register("doe", "aaaaaa");
         BookingDao.book("1", 1, "doe");
+        BookingDao.book("1", 1, "1");
     }
 }

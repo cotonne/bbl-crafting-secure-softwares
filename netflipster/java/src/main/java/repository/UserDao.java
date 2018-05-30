@@ -11,28 +11,28 @@ public class UserDao {
      * Register a user to the system.
      * The user identifier is unique.
      *
-     * @param userId identifier of a user
+     * @param name identifier of a user
      * @param password password
      * @return true if the user has been successfully registered, false otherwise
      */
-    public static void register(String userId, String password) {
-        DB.insert(String.format("INSERT INTO USERS(ID, PASSWORD) values('%s', '%s')", userId, password));
+    public static void register(String name, String password) {
+        DB.insert(String.format("INSERT INTO USERS(NAME, PASSWORD) values('%s', '%s')", name, password));
     }
 
     /**
      * Check if a user
-     * @param userId identifier of a user
+     * @param name identifier of a user
      * @param password password
      * @return true if the user exists, false otherwise
      */
-    public static boolean exist(String userId, String password) {
-        ResultSet rs = DB.execute(String.format("SELECT count(1) as total FROM USERS where id='%s' AND password='%s'", userId, password));
+    public static String exist(String name, String password) {
+        ResultSet rs = DB.execute(String.format("SELECT ID as total FROM USERS where name='%s' AND password='%s'", name, password));
         try {
             rs.next();
-            return rs.getInt("TOTAL") > 0;
+            return String.valueOf(rs.getInt("ID"));
         } catch (SQLException e) {
             e.printStackTrace();
-            return true;
+            return "";
         }
     }
 
