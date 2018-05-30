@@ -26,19 +26,19 @@ public class Main {
             System.out.println("Vous êtes connecté en tant que " + username);
             System.out.println("Films:");
 
-            // List DVD HERE
+            // List VHS HERE
             // Format
-            // dvdId) dvdName
+            // vhsId) vhsName
 
             System.out.println("Selection: ");
-            String dvdId = s.next();
+            String vhsId = s.next();
             System.out.println("Quantity: ");
             int quantity = s.nextInt();
 
-            booking(dvdId, quantity, userId);
+            booking(vhsId, quantity, userId);
 
-            System.out.println("Number of DVD : " + quantity + " , final price: 8€ x " + quantity + " DVD = " + quantity * 8 +
-                    ", If you buy one more : 7€ x " + (quantity + 1) + " DVD = " + (quantity + 1) * 7 + " €");
+            System.out.println("Number of VHS : " + quantity + " , final price: 8€ x " + quantity + " VHS = " + quantity * 8 +
+                    ", If you buy one more : 7€ x " + (quantity + 1) + " VHS = " + (quantity + 1) * 7 + " €");
         }
 
     }
@@ -52,7 +52,7 @@ public class Main {
         throw new UnsupportedOperationException();
     }
 
-    private static void booking(String userId, int quantity, String dvdId) {
+    private static void booking(String userId, int quantity, String vhsId) {
         throw new UnsupportedOperationException();
     }
 }

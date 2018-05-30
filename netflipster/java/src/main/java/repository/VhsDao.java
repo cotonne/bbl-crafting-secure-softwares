@@ -7,36 +7,35 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class DvdDao {
+public class VhsDao {
 
     /**
-     * Get the list of DVDs identifiers
+     * Get the list of VHSs identifiers
      *
-     * @return list of DVD identifiers
+     * @return list of VHS identifiers
      */
     public static Collection<String> getIdentifiers() {
-        Collection<String> dvds = new ArrayList<>();
-        ResultSet rs = DB.execute("SELECT ID FROM DVDS WHERE ID > 0");
+        Collection<String> vhs = new ArrayList<>();
+        ResultSet rs = DB.execute("SELECT ID FROM VHS WHERE ID > 0");
         try {
             while (rs.next()) {
                 int id = rs.getInt("ID");
-                dvds.add(String.valueOf(id));
+                vhs.add(String.valueOf(id));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return dvds;
+        return vhs;
     }
 
     /**
-     * Get the name of the DVD
+     * Get the name of the VHS
      *
-     * @param id identifier of the DVD
-     * @return list of DVD names
+     * @param id identifier of the VHS
+     * @return list of VHS names
      */
-    public static String getDvdNameById(String id) {
-        Collection<String[]> dvds = new ArrayList<>();
-        ResultSet rs = DB.execute(String.format("SELECT NAME FROM DVDS WHERE ID = %s", id));
+    public static String getVhsNameById(String id) {
+        ResultSet rs = DB.execute(String.format("SELECT NAME FROM VHS WHERE ID = %s", id));
         try {
             rs.next();
             return rs.getString("NAME");

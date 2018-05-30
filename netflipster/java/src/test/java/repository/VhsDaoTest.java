@@ -6,17 +6,17 @@ import java.util.Collection;
 
 import static org.junit.Assert.*;
 
-public class DvdDaoTest {
+public class VhsDaoTest {
 
     @Test
-    public void should_find_dvds() {
-        Collection<String> identifiers = DvdDao.getIdentifiers();
+    public void should_find_vhs() {
+        Collection<String> identifiers = VhsDao.getIdentifiers();
         assertEquals(8, identifiers.size());
     }
 
     @Test
-    public void should_get_a_dvd() {
-        String name = DvdDao.getDvdNameById("1");
+    public void should_get_a_vhs() {
+        String name = VhsDao.getVhsNameById("1");
         assertEquals("Harry Potter and the Philosophers Stone (2001)", name);
     }
 }
