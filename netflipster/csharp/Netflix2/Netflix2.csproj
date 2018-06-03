@@ -67,8 +67,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repository\BookingDao.cs" />
     <Compile Include="repository\DB.cs" />
-    <Compile Include="repository\DvdDao.cs" />
     <Compile Include="repository\UserDao.cs" />
+    <Compile Include="repository\VhsDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

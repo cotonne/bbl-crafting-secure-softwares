@@ -66,7 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookingDaoTests.cs" />
-    <Compile Include="DvdDaoTests.cs" />
+    <Compile Include="VhsDaoTests.cs" />
     <Compile Include="UserDaoTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserHelper.cs" />

@@ -2,9 +2,9 @@
 {
     public static class BookingDao
     {
-        public static bool Book(string dvdId, int quantity, string userId)
+        public static bool Book(string vhsId, int quantity, string userId)
         {
-            return DB.Insert($"INSERT INTO BOOKINGS(DVD_ID, QUANTITY, USER_ID) values('{dvdId}', {quantity}, '{userId}')");
+            return DB.Insert($"INSERT INTO BOOKINGS(VHS_ID, QUANTITY, USER_ID) values('{vhsId}', {quantity}, '{userId}')");
         }
     }
 }
