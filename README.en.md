@@ -3,7 +3,7 @@
 ## Your goal
 
 Are you ready to be the new **Netflipster**? Yes?
-Si, let's go! But, brace yourself, hackers are comming!
+Then, let's go! But, brace yourself, hackers are coming!
 
 ## Constraints
 
@@ -13,7 +13,7 @@ modified.
 ## The app
 
 The app is a simple command-line application.
-It relies on a in-memory database.
+It relies on an in-memory database.
 Note: only the file named "Main" should be edited.
 
 
@@ -24,7 +24,7 @@ Time to go! As your PO, here are a set of use cases that should be implemented:
 ### Sign up 
 
 **As** customer  
-**I want** register
+**I want to** register  
 **In order to** have access to Netflipster
 
 Example of output from command line of your application:
@@ -33,13 +33,13 @@ Registration ----
 Name:
 tom
 Password:
-pouce
+thumb
 ```
 
 ### Sign in
 
 **As** customer  
-**I want** login  
+**I want to** log in  
 **In order to** book movies 
 
 Example:
@@ -48,19 +48,19 @@ Connection ---
 Name:
 tom
 Password:
-pouce
+thumb
 You are connected as tom
 ```
 
 ### List movies
 
 **As** customer  
-**I want** list available movies
-**In order to** which movies are bookable
+**I want to** list available movies  
+**In order to** view which movies are bookable
 
 Example
 ```
-Films:
+Movies:
 H1)	Harry Potter and the Philosopher's Stone 
 ...
 ```
@@ -68,7 +68,7 @@ H1)	Harry Potter and the Philosopher's Stone
 ### Book movies
 
 **As** customer  
-**I want** to book a movie
+**I want to** book a movie  
 **In order to** watch it
 
 Example
@@ -83,7 +83,7 @@ Your command of 1 DVD ( Harry Potter and the Philosopher's Stone ) will be sent 
 ### Display the price of a movie
 
 **As** customer  
-**I want** to have access to reductions
+**I want to** have access to reductions  
 **In order to** pay less
 
 **Given** a quantity of DVD
