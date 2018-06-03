@@ -1,7 +1,7 @@
 ﻿using System;
-using Netflix2.repository;
+using Netflipster.Repository;
 
-namespace Netflix2.tests
+namespace Netflipster.tests
 {
     public class UserHelper
     {

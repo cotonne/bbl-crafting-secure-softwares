@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Netflix2.repository
+namespace Netflipster.Repository
 {
     public class VhsDao
     {

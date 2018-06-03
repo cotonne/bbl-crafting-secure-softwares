@@ -1,4 +1,4 @@
-﻿namespace Netflix2.repository
+﻿namespace Netflipster.Repository
 {
     public static class BookingDao
     {

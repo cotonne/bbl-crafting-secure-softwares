@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using Netflix2.repository;
+using Netflipster.Repository;
 using NFluent;
 using NUnit.Framework;
 
-namespace Netflix2.tests
+namespace Netflipster.tests
 {
     [TestFixture]
     public class VhsDaoTests

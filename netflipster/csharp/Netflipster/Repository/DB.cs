@@ -1,7 +1,7 @@
 ﻿using System.Configuration;
 using System.Data.SQLite;
 
-namespace Netflix2.repository
+namespace Netflipster.Repository
 {
     public static class DB
     {
@@ -44,7 +44,7 @@ namespace Netflix2.repository
 
         public static SQLiteConnection GetConnection()
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["Netflix2"].ConnectionString;
+            var connectionString = ConfigurationManager.ConnectionStrings["Netflipster"].ConnectionString;
             return new SQLiteConnection(connectionString);
         }
     }

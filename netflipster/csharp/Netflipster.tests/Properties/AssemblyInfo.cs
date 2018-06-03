@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Netflix2")]
+[assembly: AssemblyTitle("Netflipster.tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Netflix2")]
+[assembly: AssemblyProduct("Netflipster.tests")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4caf137b-2f70-4dbc-bbf6-3af284a3b49f")]
+[assembly: Guid("caf7c223-5b81-4c8a-942f-901120b70b18")]
 
 // Version information for an assembly consists of the following four values:
 //
