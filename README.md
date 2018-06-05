@@ -2,7 +2,7 @@
 
 ## Votre but
 
-Êtes-vous prêt à devenir le nouveau NetFlix? Oui?
+Êtes-vous prêt à devenir le nouveau NetFlix ? Oui ?
 Alors, préparez-vous, la route est semée d'embûches.
 
 ## Contraintes
@@ -19,7 +19,7 @@ Seul le fichier "Main" doit être modifié.
 
 ## Use cases
 
-A vous de jouer! En tant que PO, voici les use cases demandés:
+À vous de jouer! En tant que PO, voici les use cases demandés :
 
 ### S'enregistrer
 
@@ -40,7 +40,7 @@ pouce
 
 **En tant que** utilisateur  
 **Je veux** me connecter  
-**Afin de** commander les films sur la plateforme  
+**Afin de** commander les films sur la plate-forme  
 
 Exemple de sortie console de votre application
 ```
@@ -83,8 +83,8 @@ Votre commande de 1 VHS ( Harry Potter and the Philosopher's Stone ) sera bient�
 ### Réduction sur le prix d'un film
 
 **En tant que** utilisateur  
-**Je veux** pouvoir bénéficier de réduction
-**Afin de** avoir accès à des offres intéressantes et payer moins chère
+**Je veux** pouvoir bénéficier de réduction  
+**Afin de** avoir accès à des offres intéressantes et payer moins cher
 
 **Etant donné** la quantité de DVD sélectionnée par l'utilisateur (ex: 2 DVD)
 **Quand** le prix est calculé

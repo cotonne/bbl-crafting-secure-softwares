@@ -1,24 +1,24 @@
 ﻿using System.Linq;
-using Netflix2.repository;
+using Netflipster.Repository;
 using NFluent;
 using NUnit.Framework;
 
-namespace Netflix2.tests
+namespace Netflipster.tests
 {
     [TestFixture]
-    public class DvdDaoTests
+    public class VhsDaoTests
     {
         [Test]
         public void GetIdentifiers_Ok()
         {
-            var actual = DvdDao.GetIdentifiers();
+            var actual = VhsDao.GetIdentifiers().ToList();
             Check.That(actual.Count()).IsEqualTo(8);
         }
 
         [Test]
-        public void GetDvdNameById_Ok()
+        public void GetVhsNameById_Ok()
         {
-            var actual = DvdDao.GetDvdNameById("3");
+            var actual = VhsDao.GetVhsNameById("3");
             Check.That(actual).IsEqualTo(actual);
         }
     }

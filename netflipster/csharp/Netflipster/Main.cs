@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Netflix2
+namespace Netflipster
 {
     class Program
     {
@@ -28,19 +28,19 @@ namespace Netflix2
                 Console.WriteLine($"Vous êtes connecté en tant que {userId} ");
                 Console.WriteLine("Films : ");
 
-                // List DVD HERE
+                // List VHS HERE
                 // Format
-                // dvdId) dvdName
+                // vhsId) vhsName
                 Console.WriteLine("Selection : ");
-                var dvdId = Console.ReadLine();
+                var vhsId = Console.ReadLine();
 
                 Console.WriteLine("Quantity : ");
                 var quantity = int.Parse(Console.ReadLine());
 
-                Booking(dvdId, quantity, userId);
+                Booking(vhsId, quantity, userId);
 
-                Console.WriteLine($"Nombre de DVD : {quantity} , prix final: 8€ x {quantity} DVD = {quantity * 8}€" +
-                    $", Si vous en prenez un de plus : 7€ x {quantity + 1} DVD = {(quantity + 1) * 7}€");
+                Console.WriteLine($"Nombre de VHS : {quantity} , prix final: 8€ x {quantity} VHS = {quantity * 8}€" +
+                    $", Si vous en prenez un de plus : 7€ x {quantity + 1} VHS = {(quantity + 1) * 7}€");
             }
 
             Console.ReadLine();
@@ -60,7 +60,7 @@ namespace Netflix2
             return true;
         }
 
-        private static void Booking(string userId, int quantity, string dvdId)
+        private static void Booking(string userId, int quantity, string vhsId)
         {
         }
     }
