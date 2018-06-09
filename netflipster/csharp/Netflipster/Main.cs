@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using Netflipster.Repository;
 
 namespace Netflipster
 {
@@ -11,19 +12,20 @@ namespace Netflipster
 
             Console.WriteLine("Registration ---- ");
             Console.WriteLine("Identifier : ");
-            var userId = Console.ReadLine();
+            var userName = Console.ReadLine();
             Console.WriteLine("Password : ");
             var password = Console.ReadLine();
 
-            Register(userId, password);
+            Register(userName, password);
 
             Console.WriteLine("Connection : ");
             Console.WriteLine("Identifier : ");
-            userId = Console.ReadLine();
+            userName = Console.ReadLine();
             Console.WriteLine("Password : ");
             password = Console.ReadLine();
 
-            if (Login(userId, password))
+            string userId = Login(userName, password);
+            if (userId != "")
             {
                 Console.WriteLine($"Vous êtes connecté en tant que {userId} ");
                 Console.WriteLine("Films : ");
@@ -39,8 +41,8 @@ namespace Netflipster
 
                 Booking(vhsId, quantity, userId);
 
-                Console.WriteLine($"Nombre de VHS : {quantity} , prix final: 8€ x {quantity} VHS = {quantity * 8}€" +
-                    $", Si vous en prenez un de plus : 7€ x {quantity + 1} VHS = {(quantity + 1) * 7}€");
+                Console.WriteLine($"Number of VHS: {quantity} , final price: 8€ x {quantity} VHS = {quantity * 8}€" +
+                    $", If you buy one more : 7€ x {quantity + 1} VHS = {(quantity + 1) * 7}€");
             }
 
             Console.ReadLine();
@@ -51,17 +53,19 @@ namespace Netflipster
             Console.OutputEncoding = Encoding.GetEncoding(1252);
         }
 
-        private static void Register(string userId, string password)
+        private static void Register(string name, string password)
         {
+            UserDao.Register(name, password);
         }
 
-        private static bool Login(string userId, string password)
+        private static string Login(string name, string password)
         {
-            return true;
+            throw new NotImplementedException("Code it !");
         }
 
         private static void Booking(string userId, int quantity, string vhsId)
         {
+            throw new NotImplementedException("Code it !");
         }
     }
 }

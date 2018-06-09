@@ -13,7 +13,6 @@ public class UserDao {
      *
      * @param name identifier of a user
      * @param password password
-     * @return true if the user has been successfully registered, false otherwise
      */
     public static void register(String name, String password) {
         DB.insert(String.format("INSERT INTO USERS(NAME, PASSWORD) values('%s', '%s')", name, password));
@@ -23,7 +22,7 @@ public class UserDao {
      * Check if a user
      * @param name identifier of a user
      * @param password password
-     * @return true if the user exists, false otherwise
+     * @return the user identifier if the user exists; empty string otherwise.
      */
         public static String exist(String name, String password) {
         ResultSet rs = DB.execute(String.format("SELECT ID as total FROM USERS where name='%s' AND password='%s'", name, password));
