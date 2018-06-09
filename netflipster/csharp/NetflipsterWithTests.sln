@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.1
+VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Netflix2", "Netflix2.csproj", "{4CAF137B-2F70-4DBC-BBF6-3AF284A3B49F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Netflipster", "Netflipster\Netflipster.csproj", "{4CAF137B-2F70-4DBC-BBF6-3AF284A3B49F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Netflix2.tests", "..\Netflix2.tests\Netflix2.tests.csproj", "{CAF7C223-5B81-4C8A-942F-901120B70B18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Netflipster.tests", "Netflipster.tests\Netflipster.tests.csproj", "{CAF7C223-5B81-4C8A-942F-901120B70B18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {000ED1B1-1088-4C5B-9170-8781E4E49C01}
+		SolutionGuid = {D4D729D7-CEC5-41AB-9C5D-FD7A7831B4ED}
 	EndGlobalSection
 EndGlobal
