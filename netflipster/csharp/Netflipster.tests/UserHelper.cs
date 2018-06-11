@@ -5,27 +5,27 @@ namespace Netflipster.tests
 {
     public class UserHelper
     {
-        public static string CreateUserId()
+        public static string CreateUserName()
         {
             return "User" + Guid.NewGuid();
         }
 
         public static string Create()
         {
-            var userId = CreateUserId();
-            UserDao.Register(userId, "pwd");
-            return userId;
+            var name = CreateUserName();
+            UserDao.Register(name, "pwd");
+            return name;
         }
 
         public static string CreateWithPassword(string pwd)
         {
-            return CreateWithPassword(CreateUserId(), pwd);
+            return CreateWithPassword(CreateUserName(), pwd);
         }
 
-        public static string CreateWithPassword(string userId, string pwd)
+        public static string CreateWithPassword(string name, string pwd)
         {
-            UserDao.Register(userId, pwd);
-            return userId;
+            UserDao.Register(name, pwd);
+            return name;
         }
     }
 }

@@ -10,25 +10,25 @@ namespace Netflipster.tests
         [Test]
         public void Insert_User()
         {
-            var userId = UserHelper.CreateUserId();
-            var result = UserDao.Register(userId, "pwd");
+            var name = UserHelper.CreateUserName();
+            var result = UserDao.Register(name, "pwd");
             Check.That(result).IsTrue();
         }
 
         [Test]
         public void Exist_User()
         {
-            var userId = UserHelper.CreateUserId();
-            UserDao.Register(userId, "pwd");
-            var actual = UserDao.Exist(userId, "pwd");
-            Check.That(actual).IsTrue();
+            var name = UserHelper.CreateUserName();
+            UserDao.Register(name, "pwd");
+            var actual = UserDao.Exist(name, "pwd");
+            Check.That(actual).IsNotEmpty();
         }
 
         [Test]
         public void Exist_NoUser()
         {
             var actual = UserDao.Exist("totoZorglub", "pwdImpossible");
-            Check.That(actual).IsFalse();
+            Check.That(actual).IsEmpty();
         }
     }
 }
