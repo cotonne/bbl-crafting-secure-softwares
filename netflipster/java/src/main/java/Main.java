@@ -45,7 +45,7 @@ public class Main {
 
     private static void register(String name, String password) {
         // Check UserDao
-        UserDao.register(name, password);
+        throw new UnsupportedOperationException();
     }
 
     private static String login(String name, String password) {
