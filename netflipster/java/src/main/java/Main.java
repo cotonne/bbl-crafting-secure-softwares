@@ -26,7 +26,7 @@ public class Main {
             System.out.println("Vous êtes connecté en tant que " + username);
             System.out.println("Films:");
 
-            // List VHS HERE
+            // TODO List VHS HERE
             // Format
             // vhsId) vhsName
 
@@ -45,14 +45,16 @@ public class Main {
 
     private static void register(String name, String password) {
         // Check UserDao
-        throw new UnsupportedOperationException();
+        UserDao.register(name, password);
     }
 
     private static String login(String name, String password) {
+        // TODO TODO
         throw new UnsupportedOperationException();
     }
 
     private static void booking(String userId, int quantity, String vhsId) {
+        // TODO TODO
         throw new UnsupportedOperationException();
     }
 }
