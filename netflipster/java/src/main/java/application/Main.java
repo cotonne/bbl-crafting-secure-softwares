@@ -1,6 +1,8 @@
-import repository.UserDao;
+package application;
 
-import java.util.Scanner;
+import repository.*;
+
+import java.util.*;
 
 public class Main {
 
@@ -26,35 +28,41 @@ public class Main {
             System.out.println("Vous êtes connecté en tant que " + username);
             System.out.println("Films:");
 
-            // TODO List VHS HERE
-            // Format
-            // vhsId) vhsName
+            Collection<String> identifiers = VhsDao.getIdentifiers();
+            for (String id : identifiers) {
+                String name = VhsDao.getVhsNameById(id);
+                System.out.println(id + ") " + name);
+            }
 
             System.out.println("Selection: ");
-            String vhsId = s.next();
+            String id = s.next();
+            System.out.println(readDescription(id));
             System.out.println("Quantity: ");
-            int quantity = s.nextInt();
+            int qty = s.nextInt();
 
-            booking(vhsId, quantity, userId);
+            booking(id, qty, userId);
 
-            System.out.println("Number of VHS : " + quantity + " , final price: 8€ x " + quantity + " VHS = " + quantity * 8 +
-                    ", If you buy one more : 7€ x " + (quantity + 1) + " VHS = " + (quantity + 1) * 7 + " €");
+            System.out.println("Number of VHS : " + qty + " , final price: 8€ x " + qty + " VHS = " + qty * 8 +
+                    ", If you buy one more : 7€ x " + (qty + 1) + " VHS = " + (qty + 1) * 7 + " €");
+        } else {
+            System.err.println("Fail to log as " + username);
         }
 
     }
 
+    private static String readDescription(String id) {
+        return FileDao.read(id);
+    }
+
     private static void register(String name, String password) {
-        // Check UserDao
         UserDao.register(name, password);
     }
 
     private static String login(String name, String password) {
-        // TODO TODO
-        throw new UnsupportedOperationException();
+        return UserDao.findId(name, password);
     }
 
     private static void booking(String userId, int quantity, String vhsId) {
-        // TODO TODO
-        throw new UnsupportedOperationException();
+        BookingDao.book(userId, quantity, vhsId);
     }
 }
