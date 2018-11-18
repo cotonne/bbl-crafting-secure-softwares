@@ -31,7 +31,6 @@ public class UserDao {
             rs.next();
             return String.valueOf(rs.getInt("ID"));
         } catch (SQLException e) {
-            e.printStackTrace();
             return "";
         }
     }

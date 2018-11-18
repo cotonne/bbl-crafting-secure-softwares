@@ -15,8 +15,9 @@ public class UserTest {
 
         Main.main(null);
 
-        String data = new String(baos.toByteArray(), StandardCharsets.UTF_8);
-        assertEquals(data, "Registration ---- \nIdentifier:\nPassword:\nConnection : \nIdentifier:\nPassword:\n");
+        String output = new String(baos.toByteArray(), StandardCharsets.UTF_8);
+        assertEquals(output, "Registration ---- \nIdentifier:\nPassword:\nConnection : \nIdentifier:\nPassword:\n" +
+                "Fail to log as jack\n");
     }
 
     @Test
@@ -47,6 +48,7 @@ public class UserTest {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PrintStream out = new PrintStream(baos, true, "UTF-8");
         System.setOut(out);
+        System.setErr(out);
 
         InputStream in = new ByteArrayInputStream(initialString.getBytes());
         System.setIn(in);
