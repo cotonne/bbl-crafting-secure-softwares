@@ -1,0 +1,7 @@
+/netflipster/DotNetCore/.vs/Netflipster/v15/
+/netflipster/DotNetCore/NetFlipster.Tests/bin
+/netflipster/DotNetCore/NetFlipster.Tests/obj
+/netflipster/DotNetCore/Netflipster/bin
+/netflipster/DotNetCore/Netflipster/obj
+/netflipster/DotNetCore/.vs
+*.csproj.user

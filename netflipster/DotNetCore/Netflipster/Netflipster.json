@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "Netflipster": "Data Source=Netflipster.db"
+  }
+}
