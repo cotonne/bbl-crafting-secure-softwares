@@ -5,11 +5,6 @@
 Êtes-vous prêt à devenir le nouveau NetFlix ? Oui ?
 Alors, préparez-vous, la route est semée d'embûches.
 
-## Contraintes
-
-Seul le fichier contenant le point d'entrée de l'application
-(nommé Main) peut être modifié.
-
 ## L'application
 
 L'application est une application en mode console.
@@ -94,7 +89,4 @@ Exemple de sortie console de votre application
 ```
 Nombre de DVD : 2, prix final: 8€ x 2 DVD = 16€, Si vous en prenez un de plus : 7€ x 3 DVD = 21€
 ```
-
-
-
 

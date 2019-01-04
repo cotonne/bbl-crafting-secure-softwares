@@ -5,11 +5,6 @@
 Are you ready to be the new **Netflipster**? Yes?
 Then, let's go! But, brace yourself, hackers are coming!
 
-## Constraints
-
-Only the file with the entry point function (the file "Main") can be
-modified.
-
 ## The app
 
 The app is a simple command-line application.
