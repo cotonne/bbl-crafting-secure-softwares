@@ -6,8 +6,9 @@ public class BookingDaoTest {
 
     @Test
     public void should_book_a_vhs() {
+        // Register a new user
         UserDao.register("doe", "aaaaaa");
-        BookingDao.book("1", 1, "doe");
+        // Should be able to buy a VHS
         BookingDao.book("1", 1, "1");
     }
 }
