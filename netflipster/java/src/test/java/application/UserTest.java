@@ -5,7 +5,8 @@ import org.junit.*;
 import java.io.*;
 import java.nio.charset.*;
 
-import static org.junit.Assert.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
 
 public class UserTest {
 
@@ -22,11 +23,11 @@ public class UserTest {
 
     @Test
     public void be_able_to_connect() throws UnsupportedEncodingException {
-        ByteArrayOutputStream baos = defineScenario("john\npassword\njohn\npassword\n0\n1\n");
+        ByteArrayOutputStream baos = defineScenario("john\npassword\njohn\npassword\n1\n1\n");
 
         Main.main(null);
         String data = new String(baos.toByteArray(), StandardCharsets.UTF_8);
-        assertEquals(data,
+        assertThat(data).isEqualToIgnoringNewLines(
                 "Registration ---- \nIdentifier:\nPassword:\nConnection : \nIdentifier:\nPassword:\n" +
                         "Vous êtes connecté en tant que john\n" +
                         "Films:\n" +
@@ -39,7 +40,8 @@ public class UserTest {
                         "7) Harry Potter and the Deathly Hallows – Part 1 (2010)\n" +
                         "8) Harry Potter and the Deathly Hallows – Part 2 (2011)\n" +
                         "Selection: \n" +
-                        "No description available\n" +
+                        "Harry Potter is an orphaned boy brought up by his unkind Muggle (non-magical) aunt and uncle.\n" +
+                        "At the age of eleven, half-giant Rubeus Hagrid informs him that he is actually a wizard\n" +
                         "Quantity: \n" +
                         "Number of VHS : 1 , final price: 8€ x 1 VHS = 8, If you buy one more : 7€ x 2 VHS = 14 €\n");
     }
