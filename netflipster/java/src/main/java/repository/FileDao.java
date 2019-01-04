@@ -7,7 +7,7 @@ public class FileDao {
     public static String read(String id) {
         try {
             Path path = Paths.get("movies/" + id);
-            return String.join("\n", Files.readAllLines(path));
+            return new String(Files.readAllBytes(path));
         } catch (IOException e) {
             return "No description available";
         }
