@@ -19,9 +19,9 @@ public class Main {
 
         System.out.println("Connection : ");
         System.out.println("Identifier:");
-        username = s.next();
+        username = Sql.escapeQuote(s.next());
         System.out.println("Password:");
-        password = s.next();
+        password = Sql.escapeQuote(s.next());
 
         String userId = login(username, password);
         if (userId != "") {
@@ -59,6 +59,8 @@ public class Main {
     }
 
     private static String login(String name, String password) {
+        if(!UsernameFormat.validate(name))
+            throw new IllegalArgumentException("Invalid name!");
         return UserDao.findId(name, password);
     }
 

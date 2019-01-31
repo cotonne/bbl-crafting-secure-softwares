@@ -19,7 +19,7 @@ public class DB {
         try {
             conn = DriverManager.getConnection(url);
         } catch (SQLException e) {
-            e.printStackTrace();
+            // NOT MORE e.printStackTrace();, see SONAR
         }
         return conn;
     }
@@ -29,7 +29,7 @@ public class DB {
             Statement stmt = instance().createStatement();
             return stmt.executeQuery(query);
         } catch (SQLException e) {
-            e.printStackTrace();
+            // NOT MORE e.printStackTrace();, see SONAR
             return null;
         }
     }
@@ -39,7 +39,7 @@ public class DB {
             Statement stmt = instance().createStatement();
             stmt.execute(query);
         } catch (SQLException e) {
-            e.printStackTrace();
+            // NOT MORE e.printStackTrace();, see SONAR
         }
     }
 }

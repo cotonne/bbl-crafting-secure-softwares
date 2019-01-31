@@ -23,7 +23,7 @@ public class VhsDao {
                 vhs.add(String.valueOf(id));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            // NOT MORE e.printStackTrace();, see SONAR
         }
         return vhs;
     }
@@ -40,7 +40,7 @@ public class VhsDao {
             rs.next();
             return rs.getString("NAME");
         } catch (SQLException e) {
-            e.printStackTrace();
+            // NOT MORE e.printStackTrace();, see SONAR
         }
         return null;
     }
