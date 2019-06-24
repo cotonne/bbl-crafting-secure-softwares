@@ -25,7 +25,7 @@ public class UserDao {
      * @param password password
      * @return the user identifier if the user exists; empty string otherwise.
      */
-        public static String findId(String name, String password) {
+    public static String findId(String name, String password) {
         ResultSet rs = DB.execute(String.format("SELECT ID as total FROM USERS where name='%s' AND password='%s'", name, password));
         try {
             rs.next();
